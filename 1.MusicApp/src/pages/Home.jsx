@@ -1,6 +1,10 @@
 import React from 'react'
 import { songsData } from '../songs'
 import musicgif from '../assets/musicanim.webp';
+import { CgPlayTrackPrev } from "react-icons/cg";
+import { CgPlayTrackNext } from "react-icons/cg";
+import { FaPlay } from "react-icons/fa";
+import { FaPause } from "react-icons/fa";
 
 
 function Home() {
@@ -23,6 +27,16 @@ function Home() {
                 </div>
                 <div className='w-full flex justify-center items-center'>
                     <input type="range" className='appearance-none w-[50%] h-[7px] rounded-md bg-gray-600' id='range' />
+                </div>
+                <div className='text-white flex justify-center items-center gap-5'>
+                    <CgPlayTrackPrev className='w-[28px] h-[28px]  hover:text-gray-600 transition-all cursor-pointer' />
+                    <div className='w-[50px] h-[50px] rounded-full bg-white text-black flex justify-center items-center hover:bg-gray-600 transition-all cursor-pointer'>
+                    
+                    <FaPlay className='w-[20] '/>
+                       
+                    </div>
+                    <CgPlayTrackNext className='w-[28px] h-[28px]  hover:text-gray-600 transition-all cursor-pointer' />
+
                 </div>
 
 
