@@ -3,7 +3,7 @@ import { songsData } from '../songs'
 
 export const dataContext=createContext()
 
-function UserContext({children}) {
+function UsContext({children}) {
   let audioRef=useRef(new Audio())
   let [index , setIndex]=useState(0)
   let [playingSong,setPlayingSong]=useState(false);
@@ -60,4 +60,4 @@ function UserContext({children}) {
   )
 }
 
-export default UserContext;
+export default UsContext;

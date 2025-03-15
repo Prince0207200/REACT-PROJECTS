@@ -5,7 +5,8 @@ import { CgPlayTrackPrev } from "react-icons/cg";
 import { CgPlayTrackNext } from "react-icons/cg";
 import { FaPlay } from "react-icons/fa";
 import { FaPause } from "react-icons/fa";
-import { dataContext } from '../context/userContext';
+import { dataContext } from '../context/UsContext';
+
 
 
 
