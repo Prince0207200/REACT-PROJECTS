@@ -118,8 +118,10 @@ function Home() {
 
 
 
-            <div className='w-[50%] h-full  hidden md:flex'>
-                    <Card />
+            <div className=' w-[100%] md:w-[50%] h-full hidden  flex-col gap-5 md:flex pt-[120px] overflow-auto pb-[20px]'>
+                    {songsData.map((song)=>(
+                        <Card name={song.name} image={song.image} singer={song.singer} songIndex={song.id-1}/>
+                    ))}
 
             </div>
 
