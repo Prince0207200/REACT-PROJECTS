@@ -27,14 +27,14 @@ function UserContext({children}) {
       audioRef.current.pause()
     }
     function nextSong(){
-      setIndex(prev=>(prev+1)%songsData.length)
+      setIndex((prev)=>(prev+1)%songsData.length)
     }
     function prevSong(){
-      setIndex(prev=>{
+      setIndex((prev)=>{
         if(prev===0){
           return songsData.length-1
         }else{
-          return prev-1;
+          return prev-1
         }
       })
     }

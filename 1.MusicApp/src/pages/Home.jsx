@@ -1,5 +1,5 @@
-import React, { useContext } from 'react'
-import { songsData } from '../songs'
+import React, { useContext, useState } from 'react';
+import { songsData } from '../songs';
 import musicgif from '../assets/musicanim.webp';
 import { CgPlayTrackPrev } from "react-icons/cg";
 import { CgPlayTrackNext } from "react-icons/cg";
@@ -22,6 +22,16 @@ function Home() {
         index,
         prevSong
     } =useContext(dataContext)
+
+    let [range,setRange]=useState(0)
+
+    function handleRange(e){
+        let newrange=e.target.value
+        setRange(newrange)
+        let duration=audioRef.current.duration
+        
+        audioRef.current.currentTime
+    }
     
 
     return (
@@ -45,7 +55,7 @@ function Home() {
                 </div>
 
                 <div className='w-full flex justify-center items-center'>
-                    <input type="range" className='appearance-none w-[50%] h-[7px] rounded-md bg-gray-600' id='range' />
+                    <input type="range" className='appearance-none w-[50%] h-[7px] rounded-md bg-gray-600' id='range' value={range} onChange={handleRange} />
                 </div>
 
                 <div className='text-white flex justify-center items-center gap-5'>
