@@ -5,14 +5,31 @@ import Card from '../component/Card';
 import { songsData } from '../songs';
 
 function Search() {
-  let [input,setInput]=useState()
+  let [input,setInput]=useState("")
   let [newList,setNewList]=useState([])
-  useEffect(()=>{
-    let a=songsData.filter((song)=>
-     ( song.name.toLowerCase().includes(input)|| song.singer.toLowerCase().includes(input) )
-    )
-    setNewList(a)
-  },[input])
+
+  // useEffect(()=>{
+  //   let a=songsData.filter((song)=>
+  //    ( song.name.toLowerCase().includes(input)|| song.singer.toLowerCase().includes(input) || song.name.toUpperCase().includes(input)|| song.singer.toUpperCase().includes(input)||song.name.includes(input)|| song.singer.includes(input) )
+  //   )
+  //   setNewList(a)
+  // },[input])
+
+  useEffect(() => {
+    if (!input) { 
+      setNewList([]);
+      return;
+    }
+
+    let lowerCasedInput = input.toLowerCase(); 
+
+    let filteredSongs = songsData.filter((song) =>
+      song.name.toLowerCase().includes(lowerCasedInput) || 
+      song.singer.toLowerCase().includes(lowerCasedInput) 
+    );
+
+    setNewList(filteredSongs);
+  }, [input]);
   return (
     <div className='w-[100%] h-[100vh] bg-black flex justify-start  items-center flex-col pt-5 md:pt-[100px] gap-[30px]'>
       <Player />

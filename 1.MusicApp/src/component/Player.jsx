@@ -5,19 +5,19 @@ import { FaPlay } from "react-icons/fa";
 import { FaPause } from "react-icons/fa";
 
 function Player() {
-    let {playingSong,playSong,pauseSong} =useContext(dataContext)
+    let {playingSong,playSong,pauseSong,index} =useContext(dataContext)
     return (
         <div className='w-[100%] md:w-[60%] h-[100px] bg-white fixed bottom-[50px] md:bottom-0 rounded-t-[30px] shadow-lg pt-[8px] flex md:items-center md:p-[10px]'>
             <div className='flex justify-start items-start gap-[20px] w-[78%] h-full cursor-pointer pl-[30px] ' >
                 <div>
-                    <img src={songsData[0].image} alt="" className=' w-[60px] max-h-[60px] md:max-h-[80px] md:w-[80px] rounded-lg object-fill ' />
+                    <img src={songsData[index].image} alt="" className=' w-[60px] max-h-[60px] md:max-h-[80px] md:w-[80px] rounded-lg object-fill ' />
                 </div>
                 <div className='text-[15px] md:text-[20px]'>
                     <div className='text-black text-[1.3em] font-semibold '>
-                        {songsData[0].name}
+                        {songsData[index].name}
                     </div>
                     <div className='text-gray-800 text-[0.8em] font-semibold '>
-                        {songsData[0].singer}
+                        {songsData[index].singer}
                     </div>
 
                 </div>
