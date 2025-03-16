@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom';
 function Nav() {
     return (
 
-        <div className='w-full h-[100px] bg-black fixed bottom-0 md:top-0 text-white flex justify-around md:justify-center items-center gap-[50px] p-[20px]'>
+        <div className='w-full h-[80px] bg-black fixed bottom-0 md:top-0 text-white flex justify-around md:justify-center items-center gap-[50px] p-[20px] z-30 rounded-t-[30px]'>
            
             <Link to={"/"}>
                 <TiHome className='w-[25px] h-[25px]' />

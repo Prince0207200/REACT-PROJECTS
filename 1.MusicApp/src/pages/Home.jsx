@@ -7,6 +7,8 @@ import { FaPlay } from "react-icons/fa";
 import { FaPause } from "react-icons/fa";
 import { dataContext } from '../context/UsContext';
 import Card from '../component/Card';
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import Player from '../component/Player';
 
 
 
@@ -27,6 +29,7 @@ function Home() {
 
     let [range, setRange] = useState(0)
     let progress = useRef(null)
+    let [arrow,setArrow]=useState(false)
 
 
     useEffect(() => {
@@ -52,8 +55,10 @@ function Home() {
 
 
     return (
-        <div className='w-full h-screen bg-black flex'>
+        <div className='w-full h-screen bg-black   flex relative overflow-hidden '>
+            <MdOutlineKeyboardArrowDown className='text-white absolute top-[25px] left-[8%] md:hidden text-[30px]' onClick={()=>{setArrow(prev=>!prev)}}/>
 
+            {!arrow?<>
             <div className='md:w-[50%] w-full h-full  flex justify-start items-center pt-[20px] md:pt-[120px] flex-col gap-[30px]'>
 
                 <h1 className='text-white font-semibold text-[20px]'>Now Playing</h1>
@@ -113,17 +118,23 @@ function Home() {
             </div>
 
 
-
-
-
-
-
             <div className=' w-[100%] md:w-[50%] h-full hidden  flex-col gap-5 md:flex pt-[120px] overflow-auto pb-[20px]'>
                     {songsData.map((song)=>(
                         <Card name={song.name} image={song.image} singer={song.singer} songIndex={song.id-1}/>
                     ))}
 
             </div>
+        
+            </>
+            :
+            <div className=' w-[100%] md:w-[50%] h-[70%] items-center  flex-col gap-4 flex mt-[80px] overflow-auto pb-[70px] relative'>
+                <Player />
+            {songsData.map((song)=>(
+                <Card key={song.id} name={song.name} image={song.image} singer={song.singer} songIndex={song.id-1}/>
+            ))}
+
+    </div>
+            }
 
         </div>
     )
