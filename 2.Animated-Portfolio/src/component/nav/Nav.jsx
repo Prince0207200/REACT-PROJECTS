@@ -6,6 +6,7 @@ import { Link } from "react-scroll"
 function Nav() {
     let menu=useRef()
     let mobile=useRef()
+    
    
     return (
         <nav>

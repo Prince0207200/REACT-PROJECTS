@@ -1,6 +1,98 @@
 #about{
     width: 100%;
     height: 100%;
-    min-height: 100vh;
+    display: flex;
+   
     
+}
+.leftabout{
+   
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+.circle-line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: red;
+    box-shadow: 2px 2px 30px red;
+}
+.line11{
+    width: 2px;
+    height: 160px;
+    background-color: aliceblue;
+}
+.line12{
+    width: 2px;
+    height: 160px;
+    background-color: aliceblue;
+}
+
+
+.aboutdetails{
+    
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+.aboutdetails ul{
+    list-style: none;
+    
+}
+.aboutdetails h1{
+    background: linear-gradient(to right , rgb(255, 72, 0),white);
+    background-clip: text;
+    color: transparent;
+    
+}
+.aboutdetails li{
+    color: white;
+
+}
+.aboutdetails li span{
+    color: red;
+}
+.rightabout{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+@media (max-width:750px) {
+    #about{
+        flex-direction: column;
+    }
+    .leftabout{
+        width: 100%;
+        padding: 10%;
+        
+    }
+    .rightabout{
+        width: 100%;
+    }
+    .line11{
+        
+        height: 180px;
+        
+    }
+    .line12{
+        
+        height: 180px;
+    }
 }
