@@ -7,12 +7,12 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-   gap: 30px;
+    gap: 30px;
     
 }
-.slider{
+.slider1{
     width: 90%;
-    height: 300px;
+    height: 200px;
 
     display: flex;
     align-items: center;
@@ -22,6 +22,7 @@
     scrollbar-width: none;
     padding: 20px;
 }
+
 .ph{
     
     font-size: 3vmax;
@@ -29,4 +30,14 @@
     background-clip: text;
     color: transparent;
 
+}
+
+@media (max-width:750px){
+    #project {
+        flex-direction: column;
+        height: 60vh;
+        
+    }
+    
+    
 }

@@ -13,7 +13,7 @@ function Project() {
   return (
     <div id='project'>
       <h1 className='ph'>6+ MONTHS EXPERIENCED IN PROJECT</h1>
-      <div className="slider">
+      <div className="slider1">
       <Card title="GEET MUSIC APP" image={gma}/>
       <Card title="GEET MUSIC APP" image={br}/>
       <Card title="GEET MUSIC APP" image={cb}/>
@@ -22,6 +22,7 @@ function Project() {
       <Card title="GEET MUSIC APP" image={ise}/>
 
       </div>
+      
     </div>
   )
 }

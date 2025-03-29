@@ -1,6 +1,7 @@
 import React from 'react'
 import './Home.css'
-import man from '../../assets/man.png'
+import githubIcon from '../../assets/github.png';
+import man1 from '../../assets/cartoon2.png'
 import { Typewriter } from 'react-simple-typewriter';
 
 
@@ -24,12 +25,29 @@ function Home() {
               delaySpeed={1200}
             />
           </div>
-          <button>HIRE ME</button>
+          <div className='line4'>
+                    <a href='#' target='_blank'>
+                        <img src={githubIcon}
+                        alt='githubIconImg'
+                        className='homepage_left_gitIconImg'/>
+                    </a>
+                    <a href='#' target='_blank'>
+                        <img src={githubIcon}
+                        alt='githubIconImg'
+                        className='homepage_left_gitIconImg'/>
+                    </a>
+                   
+                </div>
+         
+                    <div><a href='mailto:princegupta1455@gmail.com'>
+                        <button>Get in touch</button>
+                    </a></div>
+                
 
         </div>
       </div>
       <div className="righthome">
-        <img src={man} alt="" />
+        <img src={man1} alt="" />
       </div>
     </div>
   )

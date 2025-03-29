@@ -6,8 +6,8 @@ function Contact() {
   return (
     <div id='contact'>
         <div className="leftcontact">
-            <img src={con} alt="" />
-        </div>
+          
+          </div>
         <div className="rightcontact">
             <form action="https://formspree.io/f/moveldpk" method='POST'>
               <input name="Username" type="text"  placeholder='Name'/>

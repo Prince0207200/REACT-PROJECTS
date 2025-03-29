@@ -1,8 +1,6 @@
 #home{
     width: 100%;
-    height: auto;
-    min-height: 80vh;
-    
+    height: 100vh;
     display: flex;
 
     
@@ -17,6 +15,7 @@
     color: white;
 
 }
+
 .righthome{
     width: 50%;
     height: 100vh;
@@ -25,7 +24,7 @@
     justify-content: center;
 }
 .righthome img{
-    width: 60%;
+    width: 70%;
     filter: drop-shadow(2px 2px 20px red);
 
 
@@ -47,12 +46,24 @@
 .line3{
     font-size: 1em;
 }
+.line4{
+   
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.homepage_left_gitIconImg{
+    height: 50px;
+    margin: 5px;
+    filter: drop-shadow(1px 1px 5px rgb(168, 101, 101));
+
+}
 .homedetails button{
-    padding: 10px 30px;
+    padding: 10px 20px;
     background-color: transparent;
     color: red;
     border: 2px solid red;
-    margin-top: 30px;
+    margin-top: 20px;
     border-radius: 17px;
     font-size: 20px;
     transition: all 0.3s;
@@ -63,19 +74,60 @@
     color: black;
     cursor: pointer;
 }
-@media (max-width:750px){
+
+
+@media (max-width: 750px) {
     #home {
         flex-direction: column-reverse;
+        height: auto;
+        padding-top: 100px; 
     }
-    .lefthome{
+
+    .lefthome {
         width: 100%;
-        height: 50vh;
+        height: auto;
+        padding: 20px;
+        text-align: center;
     }
-    .righthome{
+
+    .righthome {
         width: 100%;
-        height: 50vh;
-        align-items: end;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .righthome img {
+        width: 70%;
+        max-width: 300px;
+    }
+
+    .homedetails {
+        font-size: 4vw;
+    }
+
+    .line1 {
+        font-size: 3vw;
+    }
+
+    .line2 {
+        font-size: 5vw;
+    }
+
+    .line3 {
+        font-size: 3.5vw;
+    }
+
+    .homedetails button {
+        padding: 8px 20px;
+        font-size: 4vw;
+    }
+    .homepage_left_gitIconImg{
+        height: 40px;
+    
     }
 }
+
 
 
