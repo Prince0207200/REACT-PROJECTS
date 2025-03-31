@@ -1,0 +1,18 @@
+.cvopenbutton .cvdownloadbutton {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid red;
+    background: transparent;
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.cvopenbutton:hover .cvdownloadbutton:hover{
+    background: red;
+    color: white;
+}
+
+
+

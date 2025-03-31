@@ -1,15 +1,15 @@
-import React from 'react'
-import './Home.css'
-import githubIcon from '../../assets/github.png';
-import man1 from '../../assets/cartoon2.png'
-import { Typewriter } from 'react-simple-typewriter';
-
+import React from "react";
+import "./Home.css";
+import man1 from "../../assets/cartoon2.png";
+import { Typewriter } from "react-simple-typewriter";
+import Cv from "../Cv/Cv";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 function Home() {
- 
-
   return (
-    <div id='home'>
+    <div id="home">
+     
+
       <div className="lefthome">
         <div className="homedetails">
           <div className="line1">I'M</div>
@@ -25,32 +25,42 @@ function Home() {
               delaySpeed={1200}
             />
           </div>
-          <div className='line4'>
-                    <a href='#' target='_blank'>
-                        <img src={githubIcon}
-                        alt='githubIconImg'
-                        className='homepage_left_gitIconImg'/>
-                    </a>
-                    <a href='#' target='_blank'>
-                        <img src={githubIcon}
-                        alt='githubIconImg'
-                        className='homepage_left_gitIconImg'/>
-                    </a>
-                   
-                </div>
-         
-                    <div><a href='mailto:princegupta1455@gmail.com'>
-                        <button>Get in touch</button>
-                    </a></div>
-                
 
+          {/* Social Icons (Visible Above CV Button in Mobile View) */}
+          <div className="social-home mobile-social">
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className="social-icon linkedin" />
+            </a>
+            <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer">
+              <FaGithub className="social-icon github" />
+            </a>
+            <a href="mailto:prince.12215879@lpu.in">
+              <FaEnvelope className="social-icon email" />
+            </a>
+          </div>
+
+          <Cv />
         </div>
       </div>
+
       <div className="righthome">
-        <img src={man1} alt="" />
+        <img src={man1} alt="Avatar" />
+
+        {/* Social Icons (Visible at Bottom in Laptop View) */}
+        <div className="social-home desktop-social">
+          <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin className="social-icon linkedin" />
+          </a>
+          <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer">
+            <FaGithub className="social-icon github" />
+          </a>
+          <a href="mailto:prince.12215879@lpu.in">
+            <FaEnvelope className="social-icon email" />
+          </a>
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

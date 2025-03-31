@@ -1,112 +1,147 @@
-#contact{
-    width: 100%;
-    height: 100vh;
+/* Contact Section Layout */
+.contact-container {
     display: flex;
-   background-color: pink;
-    
-
-    
-}
-.leftcontact{
-    width: 50%;
-    height: 100vh;
-    display: flex;
-    padding: 30px;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-color: aqua;
-    
-}
-
-.rightcontact{
-    width: 50%;
-    height: 100vh;
-    display: flex;
-    padding: 40px;
-    align-items: center;
-    justify-content: center;
-    background-color: brown;
-
-}
-.rightcontact form{
-    width: auto;
+    min-height: 100vh;
    
-    height: 70vh;
-    background-color: rgb(19, 25, 25);
-    box-shadow: 2px 2px 10px black,2px 2px 20px black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 30px;
-    border-radius: 20px;
+    color: white;
     padding: 20px;
+  }
+  
+  /* Left Contact Details */
+  .left-contact {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .contact-card {
+    background: linear-gradient(to right, #1a1616, #0e121d);
+    box-shadow: 2px 2px 10px black,2px 2px 20px black;  
+   
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
     
-}
-.rightcontact form:hover{
-    box-shadow: 2px 2px 10px rgb(223, 6, 6),2px 2px 20px rgb(233, 8, 8);
-}
-.rightcontact form input{
-    width: 80%;
-    max-width: 90%;
-    box-sizing: border-box; 
-    height: 50px;
-    border: 2px solid red;
-    border-radius: 10px;
-    padding: 20px;
-    outline: none;
-    box-sizing: border-box; 
-
-}
-.rightcontact form #textarea{
-    width: 80%;
-    height: 200px;
-    border: 2px solid red;
-    border-radius: 10px;
-    padding: 20px;
-    outline: none;
-
-}
-
-
-#btn{
-    width: 180px;
-    height: 60px;
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  .contact-title {
+    background: linear-gradient(to right , red,white);
+    background-clip: text;
+    color: transparent;
+    font-size: 1.8rem;
+   
+    margin-bottom: 15px;
+  }
+  
+  .contact-info {
+    margin-bottom: 15px;
+  }
+  
+  .contact-item {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .blue { color: #c95410; }
+  .green { color: #10b981; }
+  .red { color: #ef4444; }
+  
+  /* Contact Form */
+  .right-contact {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .right-contact form {
+    width: 80%;
+    max-width: 450px;
+    background: linear-gradient(to right, #1a1616, #0f172a);
+    box-shadow: 2px 2px 10px black,2px 2px 20px black;  
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+  }
+  .right-contact form:hover{
+    box-shadow: 2px 2px 10px #e60a1c, 2px 2px 20px #ff6b81;
+}
+
+  .right-contact form input,
+  .right-contact form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.918);
+    color: white;
+  }
+  
+  .right-contact form input:focus,
+  .right-contact form textarea:focus {
+    border: 2px solid rgb(99, 53, 53);
+  }
+  
+  .right-contact form textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .form-button {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 17px;
+    border: none;
+    cursor: pointer;
     background-color: transparent;
     color: red;
     border: 2px solid red;
-    border-radius: 17px;
-    font-size: 20px;
-    transition: all 0.3s;
-    padding: 0;
-
-}
-
-#btn:hover{
+    transition: all 0.3s ease;
+  }
+  
+  .form-button:hover {
     background-color: red;
     color: black;
     cursor: pointer;
-}
-
-@media (max-width: 750px) {
-    #contact {
-        flex-direction: column;
-        height: auto;
-        padding-bottom: 50px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+      text-align: center;
     }
-
-    .leftcontact,
-    .rightcontact {
-        width: 100%;
-        height: auto;
-        padding: 20px;
+  
+    .left-contact,
+    .right-contact {
+      width: 100%;
     }
-
-    
-    .rightcontact form {
-        width: 90%;
+  
+    .right-contact form {
+      width: 90%;
     }
-}
+  }
+  

@@ -10,9 +10,10 @@
     gap: 30px;
     
 }
+
 .slider1{
     width: 90%;
-    height: 200px;
+    height: 500px;
 
     display: flex;
     align-items: center;
@@ -35,7 +36,8 @@
 @media (max-width:750px){
     #project {
         flex-direction: column;
-        height: 60vh;
+        height: auto;
+        max-height: 100vh;
         
     }
     
