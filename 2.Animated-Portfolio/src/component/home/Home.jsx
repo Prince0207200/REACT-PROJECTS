@@ -6,6 +6,9 @@ import Cv from "../Cv/Cv";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 function Home() {
+
+  
+
   return (
     <div id="home">
      
@@ -27,15 +30,15 @@ function Home() {
           </div>
 
           {/* Social Icons (Visible Above CV Button in Mobile View) */}
-          <div className="social-home mobile-social">
+          <div className="mobile-social">
             <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="social-icon linkedin" />
+              <FaLinkedin className="social-icon" />
             </a>
             <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="social-icon github" />
+              <FaGithub className="social-icon" />
             </a>
             <a href="mailto:prince.12215879@lpu.in">
-              <FaEnvelope className="social-icon email" />
+              <FaEnvelope className="social-icon" />
             </a>
           </div>
 
@@ -47,17 +50,22 @@ function Home() {
         <img src={man1} alt="Avatar" />
 
         {/* Social Icons (Visible at Bottom in Laptop View) */}
-        <div className="social-home desktop-social">
-          <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin className="social-icon linkedin" />
-          </a>
-          <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer">
-            <FaGithub className="social-icon github" />
-          </a>
-          <a href="mailto:prince.12215879@lpu.in">
-            <FaEnvelope className="social-icon email" />
-          </a>
-        </div>
+        <div className="desktop-social">
+            <div className="desktop-social-top">
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className="linkedin" />
+            </a>
+            <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer">
+              <FaGithub className="github" />
+            </a>
+            
+            </div>
+            <div className="desktop-social-bottom">
+            <a href="mailto:prince.12215879@lpu.in">
+              <FaEnvelope className="email" />
+            </a>
+            </div>
+          </div>
       </div>
     </div>
   );

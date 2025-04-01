@@ -19,6 +19,10 @@ function About() {
       <div className="slider">
         
       </div>
+      <h1 className='ph'>6+ MONTHS EXPERIENCED IN PROJECTS</h1>
+      <div className="slider">
+        
+      </div>
 
     </div>
   )
