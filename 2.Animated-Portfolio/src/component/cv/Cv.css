@@ -2,7 +2,7 @@
     padding: 10px 20px;
     border-radius: 8px;
     border: 2px solid red;
-    background: transparent;
+    background: black;
     color: red;
     font-size: 16px;
     cursor: pointer;
@@ -11,7 +11,7 @@
 
 .cvopenbutton:hover .cvdownloadbutton:hover{
     background: red;
-    color: white;
+    color: black;
 }
 
 

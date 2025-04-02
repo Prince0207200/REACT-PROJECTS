@@ -11,7 +11,7 @@ function CardPro({ title, image, about, description, techStack }) {
 
       {/* Hidden Content Appears on Hover */}
       <div className="hovercardpro">
-        <h1>{title}</h1>
+        <h3>{title}</h3>
         <p className="card-desc">{about}</p>
         {description && <p className="card-detail">{description}</p>}
         {techStack && <p className="tech-stack"><strong>Tech Used:</strong> {techStack}</p>}

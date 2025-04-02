@@ -1,3 +1,6 @@
+
+
+
 export const desc = [
     { about: "A powerful music streaming app", description: "Stream & manage your favorite songs.", techStack: "React, Firebase, Redux" },
     { about: "Read & manage blogs effortlessly", description: "A blog aggregation and reading platform.", techStack: "Next.js, MongoDB, Tailwind" },
@@ -7,3 +10,22 @@ export const desc = [
     { about: "Final Big Project", description: "An amazing project solving real-world issues.", techStack: "Spring Boot, React, AWS" }
   ];
   
+
+export const skill=[
+  { title: "MERN"},
+  { title: "MERN"},
+  { title: "MERN"},
+  { title: "MERN"},
+  { title: "MERN"},
+  { title: "MERN"},
+  { title: "MERN"},
+  { title: "MERN"},
+  { title: "MERN"},
+  { title: "MERN"},
+  { title: "MERN"},
+  { title: "MERN"},
+  { title: "MERN"},
+  { title: "MERN"},
+  { title: "MERN"}
+
+];

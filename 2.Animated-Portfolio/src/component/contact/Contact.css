@@ -1,147 +1,188 @@
-/* Contact Section Layout */
-.contact-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-   
-    color: white;
-    padding: 20px;
-  }
-  
-  /* Left Contact Details */
-  .left-contact {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .contact-card {
-    background: linear-gradient(to right, #1a1616, #0e121d);
-    box-shadow: 2px 2px 10px black,2px 2px 20px black;  
-   
-    backdrop-filter: blur(10px);
-    padding: 20px;
-    border-radius: 15px;
-    
-    text-align: center;
-    width: 90%;
-    max-width: 600px;
-  }
-  
-  .contact-title {
-    background: linear-gradient(to right , red,white);
-    background-clip: text;
-    color: transparent;
-    font-size: 1.8rem;
-   
-    margin-bottom: 15px;
-  }
-  
-  .contact-info {
-    margin-bottom: 15px;
-  }
-  
-  .contact-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .icon {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .blue { color: #c95410; }
-  .green { color: #10b981; }
-  .red { color: #ef4444; }
-  
-  /* Contact Form */
-  .right-contact {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .right-contact form {
-    width: 80%;
-    max-width: 450px;
-    background: linear-gradient(to right, #1a1616, #0f172a);
-    box-shadow: 2px 2px 10px black,2px 2px 20px black;  
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
-    border-radius: 15px;
-    transition: all 0.3s ease;
-  }
-  .right-contact form:hover{
-    box-shadow: 2px 2px 10px #e60a1c, 2px 2px 20px #ff6b81;
+/* Contact Section */
+#contact {
+  color: #b8b3b3;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
 }
 
-  .right-contact form input,
-  .right-contact form textarea {
+/* Contact Container */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1100px;
+  gap: 40px;
+}
+
+/* Left Contact Section */
+.left-contact {
+  flex: 1;
+  padding: 20px;
+  background: black;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.left-contact h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: red;
+}
+
+.left-contact p {
+  font-size: 1rem;
+  color: #b8b3b3;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.blue {
+  color: #007bff;
+}
+
+.green {
+  color: #28a745;
+}
+
+.red {
+  color: #dc3545;
+}
+
+/* Right Contact Section */
+.right-contact {
+  flex: 1;
+  padding: 20px;
+  background: linear-gradient(to right, #1a1616, #0e121d);
+  box-shadow: 2px 2px 10px black, 2px 2px 20px black;
+
+  border-radius: 8px;
+
+}
+
+.right-contact h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: red;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #8f8d8d;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c25454;
+  border-radius: 5px;
+  background-color: aliceblue;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: none;
+  height: 100px;
+}
+
+.form-button {
+  padding: 10px 20px;
+  background-color: rgb(17, 17, 17);
+  color: red;
+  border: 2px solid red;
+  margin-top: 20px;
+  border-radius: 87px;
+  transition: all 0.3s;
+  width: 100%;
+  font-size: 1rem;
+ 
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: red;
+  color: black;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+  margin-top: 10px;
+
+}
+
+.social-icon {
+  font-size: 30px;
+
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.linkedin {
+  color: grey;
+  transform: scale(1.2);
+}
+
+.github {
+  color: grey;
+  transform: scale(1.2);
+}
+
+.email {
+  color: grey;
+  transform: scale(1.2);
+}
+
+.linkedin:hover {
+  color: #0077b5;
+  transform: scale(1.2);
+}
+
+.github:hover {
+  color: #524e4e;
+  transform: scale(1.2);
+}
+
+.email:hover {
+  color: #ea4335;
+  transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .left-contact,
+  .right-contact {
     width: 100%;
-    padding: 10px;
-    border: 2px solid transparent;
-    border-radius: 8px;
-    outline: none;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.918);
-    color: white;
   }
-  
-  .right-contact form input:focus,
-  .right-contact form textarea:focus {
-    border: 2px solid rgb(99, 53, 53);
-  }
-  
-  .right-contact form textarea {
-    height: 100px;
-    resize: none;
-  }
-  
-  .form-button {
-    padding: 12px;
-    font-size: 1rem;
-    border-radius: 17px;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-    color: red;
-    border: 2px solid red;
-    transition: all 0.3s ease;
-  }
-  
-  .form-button:hover {
-    background-color: red;
-    color: black;
-    cursor: pointer;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .contact-container {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .left-contact,
-    .right-contact {
-      width: 100%;
-    }
-  
-    .right-contact form {
-      width: 90%;
-    }
-  }
-  
+}

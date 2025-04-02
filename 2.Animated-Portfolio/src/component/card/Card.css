@@ -1,57 +1,57 @@
-.card{
+.card {
     width: 90%;
-    max-width: 350px;
-    height: 160px;
+    max-width: 190px;
+    height: 130px;
     background: linear-gradient(to right, #1a1616, #0e121d);
-    box-shadow: 2px 2px 10px black,2px 2px 20px black;  
+    box-shadow: 2px 2px 10px black, 2px 2px 20px black;  
     position: relative;
     overflow: hidden;
     display: flex;
     align-items: center;
-    text-align: center;
     justify-content: center;
     border-radius: 10px;
-    
     transition: all 0.2s;
     flex-shrink: 0;
     padding: 10px;
-
 }
 
-.card:hover{
-    box-shadow: 2px 2px 10px rgb(241, 53, 53),2px 2px 10px rgb(151, 32, 32);
-    cursor: pointer;
+/* Ensure the image is displayed by default */
+.card img {
+    
+    height: 60%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
 }
 
-.hovercard img{
-    height: 80%;
-    filter: drop-shadow(2px 2px 10px black);
-}
-
-.hovercard{
+/* Initially hide the title */
+.hovercard {
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgba(182, 5, 5, 0.438),rgba(0, 0, 0, 0.308));
+    background: linear-gradient(to top, rgba(182, 5, 5, 0.438), rgba(0, 0, 0, 0.308));
     position: absolute;
-    bottom: 0;
-    transform: translateY(100%);
-    transition: all 0.4s;
+    top: 0;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(19px);
-
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
 }
 
-.card:hover .hovercard{
+/* Show title and hide image on hover */
+.card:hover .hovercard {
     transform: translateY(0%);
 }
 
-.card h1{
-    font-size: 24px;
-    background: linear-gradient(to right , rgb(255, 72, 0),white);
+.card:hover img {
+    opacity: 0; /* Hide the image */
+}
+
+.hovercard h3 {
+    font-size: 20px;
+    background: linear-gradient(to right, rgb(255, 72, 0), white);
     background-clip: text;
     color: transparent;
     text-align: center;
-    
 }

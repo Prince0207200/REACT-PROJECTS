@@ -14,7 +14,7 @@ import { desc } from '../db.js';
 function Project() {
   return (
     <div id='project'>
-      <h1 className='ph'>6+ MONTHS EXPERIENCED IN PROJECTS</h1>
+      <h1 className='ph'>6+ Months Experience in Projects</h1>
       <div className="slider1">
         <CardPro title="GEET MUSIC APP" image={gma} about={desc[0].about} description={desc[0].description} techStack={desc[0].techStack} />
         <CardPro title="BLOG READER" image={br} about={desc[1].about} description={desc[1].description} techStack={desc[1].techStack} />

@@ -25,10 +25,10 @@ const Cv = () => {
         
         onMouseEnter={(e) => {
           e.target.style.background = "red";
-          e.target.style.color = "white";
+          e.target.style.color = "black";
         }}
         onMouseLeave={(e) => {
-          e.target.style.background = "transparent";
+          e.target.style.background = "black";
           e.target.style.color = "red";
         }}
       >
@@ -41,10 +41,10 @@ const Cv = () => {
         className="cvdownloadbutton"
         onMouseEnter={(e) => {
           e.target.style.background = "red";
-          e.target.style.color = "white";
+          e.target.style.color = "black";
         }}
         onMouseLeave={(e) => {
-          e.target.style.background = "transparent";
+          e.target.style.background = "black";
           e.target.style.color = "red";
         }}
       >
