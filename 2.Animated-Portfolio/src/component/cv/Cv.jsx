@@ -1,4 +1,5 @@
 import React from "react";
+import './Cv.css'
 
 const Cv = () => {
   const cvPath = "/mycv.pdf"; // Directly accessible from 'public' folder
@@ -17,36 +18,21 @@ const Cv = () => {
   };
 
   return (
-    <div style={{ display: "flex", gap: "15px" }}>
-      {/* Open CV Button */}
+    <div className="cv">
+      
       <button
       className="cvopenbutton"
         onClick={handleOpen}
         
-        onMouseEnter={(e) => {
-          e.target.style.background = "red";
-          e.target.style.color = "black";
-        }}
-        onMouseLeave={(e) => {
-          e.target.style.background = "black";
-          e.target.style.color = "red";
-        }}
+        
       >
         Open CV
       </button>
 
-      {/* Download CV Button */}
+      
       <button
         onClick={handleDownload}
         className="cvdownloadbutton"
-        onMouseEnter={(e) => {
-          e.target.style.background = "red";
-          e.target.style.color = "black";
-        }}
-        onMouseLeave={(e) => {
-          e.target.style.background = "black";
-          e.target.style.color = "red";
-        }}
       >
         Download CV
       </button>

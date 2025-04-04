@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Home.css";
 import man1 from "../../assets/cartoon2.png";
 import { Typewriter } from "react-simple-typewriter";
-import Cv from "../Cv/Cv";
+import Cv from '../cv/Cv.jsx'
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { RiArrowDownDoubleLine } from "react-icons/ri";
 import { RiArrowUpDoubleLine } from "react-icons/ri";
@@ -12,7 +12,6 @@ function Home() {
 
   return (
     <div id="home">
-
 
       <div className="lefthome">
         <div className="homedetails">
@@ -81,10 +80,6 @@ function Home() {
                 </div>
               </div>
             )}
-
-
-
-
 
           </div>
         </div>

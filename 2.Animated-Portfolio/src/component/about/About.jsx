@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.css';
+import profilepic from "../../assets/portfolioimgmain.jpg"
 
 
 function About() {
@@ -7,7 +8,7 @@ function About() {
     <section id="about">
       <div className="about-container">
         <div className="about-left">
-          <img src="your-profile-image.jpg" alt="Profile" className="profile-pic" />
+          <img src={profilepic} alt="Profile" className="profile-pic" />
         </div>
 
         <div className="about-right">

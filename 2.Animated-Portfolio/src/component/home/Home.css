@@ -43,17 +43,7 @@
     font-size: 1em;
 }
 
-/* Buttons */
-.homedetails button {
-    padding: 10px 20px;
-   background-color: black;
-    color: red;
-    border: 2px solid red;
-    margin-top: 20px;
-    border-radius: 17px;
-    font-size: 20px;
-    transition: all 0.3s;
-}
+
 
 
 
@@ -98,12 +88,7 @@
     
 }
   
-  .box {
-   
-    color: white;
-    padding: 1rem;
-    border-radius: 0.5rem;
-  }
+  
   
   .arrow {
     margin-top: 0.5rem;
