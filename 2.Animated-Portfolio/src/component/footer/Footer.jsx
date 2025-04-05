@@ -1,18 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { FaArrowUp } from "react-icons/fa";
 import "./Footer.css";
+import { devTips } from "../db";
 
 export default function Footer() {
-  const devTips = [
-    "Keep functions pure for better testability!",
-    "Write code as if the next developer is a serial killer who knows where you live. 😆",
-    "Don't repeat yourself (DRY) – use functions and components wisely.",
-    "Console.log() is great, but learn to use breakpoints in DevTools!",
-    "Readability is more important than cleverness. Keep it simple!",
-    "Use meaningful variable names – no more 'x' and 'y'! 🚀",
-    "Comment WHY the code exists, not WHAT it does.",
-    "Master Git – it's your safety net!"
-  ];
+ 
 
   const [tip, setTip] = useState("");
 
