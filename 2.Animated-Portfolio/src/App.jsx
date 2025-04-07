@@ -17,9 +17,10 @@ function App() {
 
       <Home/>
       <About/>
-      <Experience/>
+     
       <Skills/>
       <Project/>
+      <Experience />
       <Contact/>
       <Footer/>
 

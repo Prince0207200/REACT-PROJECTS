@@ -18,7 +18,7 @@ function Nav() {
             </Link>
             
             <ul className="desktopmenu">
-                {["about", "skills", "project", "contact"].map((section) => (
+                {["about", "skills", "project", "experience","contact"].map((section) => (
                     <Link
                         key={section}
                         to={section}
@@ -46,7 +46,7 @@ function Nav() {
             </div>
 
             <ul className={`mobilemenu ${menuOpen ? "activemobile" : ""}`}>
-                {["home", "about", "skills", "project", "contact"].map((section) => (
+                {["home", "about", "skills", "project","experience", "contact"].map((section) => (
                     <Link
                         key={section}
                         to={section}

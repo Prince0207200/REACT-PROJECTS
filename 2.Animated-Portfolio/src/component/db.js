@@ -1,12 +1,5 @@
-// Project Descriptions
-export const desc = [
-  { about: "A powerful music streaming app", description: "Stream & manage your favorite songs.", techStack: "React, Firebase, Redux" },
-  { about: "Read & manage blogs effortlessly", description: "A blog aggregation and reading platform.", techStack: "Next.js, MongoDB, Tailwind" },
-  { about: "Collaborate on coding projects", description: "A platform for developers to work together.", techStack: "MERN Stack, WebSockets" },
-  { about: "Instant Search Engine", description: "A fast search tool with real-time indexing.", techStack: "Elasticsearch, Node.js" },
-  { about: "Another Cool Project", description: "Some awesome project details here.", techStack: "Django, PostgreSQL, React" },
-  { about: "Final Big Project", description: "An amazing project solving real-world issues.", techStack: "Spring Boot, React, AWS" }
-];
+
+
 
 // Image Imports
 import reactImg from '../assets/react.png';
@@ -95,4 +88,82 @@ export const devTips = [
   "Networking isn't just cables – connect with other devs!",
   "Writing documentation is like writing your own survival guide.",
   "Code is poetry – make it readable, not just functional."
+];
+
+
+// Project Descriptions
+import gma from '../assets/va.png';
+import br from '../assets/br.png';
+import cb from '../assets/cb.png';
+import ise from '../assets/ise.png';
+import pmt from '../assets/cb.png';  
+import ai from '../assets/cb.png';   
+
+export const desc = [
+  { 
+    title: "Geet Music App",
+    about: "An immersive and user-friendly music streaming application.",
+    description: "Geet Music App lets you explore, stream, and manage your favorite songs effortlessly. It features a sleek UI, real-time search, playlist creation, and seamless audio playback. Users can create personalized playlists, like and share tracks, and experience smooth cross-device synchronization.",
+    techStack: "React",
+    liveLink: "#", 
+    codeLink: "#",
+    image: gma,
+    date: "12-13-14",
+    projectType: "asd"
+  },
+  { 
+    title: "Blog Aggregator", 
+    about: "Read & manage blogs effortlessly", 
+    description: "A blog aggregation and reading platform.", 
+    techStack: "Next.js, MongoDB, Tailwind",
+    liveLink: "#", 
+    codeLink: "#",
+    image: br,
+    date: "12-13-14",
+    projectType: "asd"
+  },
+  { 
+    title: "Code Collaboration Platform", 
+    about: "Collaborate on coding projects", 
+    description: "A platform for developers to work together.", 
+    techStack: "MERN Stack, WebSockets",
+    liveLink: "#", 
+    codeLink: "#",
+    image: cb,
+    date: "12-13-14",
+    projectType: "asd"
+  },
+  { 
+    title: "Instant Search Engine", 
+    about: "A fast search tool with real-time indexing.", 
+    description: "An advanced search engine with instant results.", 
+    techStack: "Elasticsearch, Node.js",
+    liveLink: "#", 
+    codeLink: "#",
+    image: ise,
+    date: "12-13-14",
+    projectType: "asd"
+  },
+  { 
+    title: "Project Management Tool", 
+    about: "Manage projects efficiently", 
+    description: "A task management app with real-time collaboration.", 
+    techStack: "Django, PostgreSQL, React",
+    liveLink: "#", 
+    codeLink: "#",
+    image: pmt,
+    date: "feb 25 to current",
+    projectType: "asd"
+  },
+  { 
+    title: "AI-Powered Assistant", 
+    about: "An intelligent chatbot", 
+    description: "A smart assistant powered by AI and NLP.", 
+    techStack: "Spring Boot, React, AWS",
+    liveLink: "#", 
+    codeLink: "#",
+    image: ai,
+    date: "End on: Jan 2024",
+    projectType: "asd"
+  }
 ];
