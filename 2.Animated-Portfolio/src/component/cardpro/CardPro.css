@@ -1,10 +1,7 @@
-
-
 .cardpro {
     width: 90%;
-    max-width: 350px;
-    height: 360px;
-   
+    max-width: 250px;
+    min-height: 400px; /* Ensure enough space */
     position: relative;
     overflow: hidden;
     display: flex;
@@ -14,18 +11,16 @@
     justify-content: center;
     border-radius: 10px;
     background: linear-gradient(to right, #1a1616, #1b1d20);
-    box-shadow: 2px 2px 10px black,2px 2px 20px black;  
+    box-shadow: 2px 2px 10px black, 2px 2px 20px black;
     transition: all 0.3s ease-in-out;
     flex-shrink: 0;
-    gap: 10px;
-    padding: 15px;
+    padding: 20px;
 }
 
 /* Default Image Display */
 .card-image {
-    width: 100%;
-    height: auto;
-    max-height: 180px;
+    width: 90%;
+    min-height: 10px;
     object-fit: cover;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
@@ -44,116 +39,8 @@
 .hovercardpro {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    position: absolute;
-    bottom: 0;
-    transform: translateY(100%);
-    transition: all 0.4s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    color: white;
-    text-align: center;
-    backdrop-filter: blur(10px);
-    
-    padding: 15px;
-    overflow: hidden;
-}
-.hovercardpro h1{
-    font-size: 22px;
-}
-
-
-.cardpro:hover .hovercardpro {
-    transform: translateY(0);
-}
-
-/* Description & Tech Stack */
-.card-desc {
-    font-size: 18px;
-    
-    margin-bottom: 10px;
-}
-
-.card-detail {
-    font-size: 17px;
-    color: #d1d1d1;
-}
-
-.tech-stack {
-    font-size: 14px;
-    color: #ff4757;
-    font-weight: bold;
-}
-
-/* Hover Effect - Image Slightly Shrinks */
-.cardpro:hover .card-image {
-    transform: scale(0.95);
-}
-
-.project-links {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .btn-live, .btn-code {
-    padding: 8px 14px;
-    border: 2px solid  red;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  .btn-live {
-    background-color: black;
-    color: red;
-  }
-  
-  .btn-code {
-    background-color: black;
-    color: red;
-  }
-  
-  .btn-live:hover {
-    background-color: red;
-    color: black;
-  }
-  
-  .btn-code:hover {
-    background-color: red;
-    color: black;
-  }
-  .card-date, .card-type, .hover-indicator {
-    font-size: 14px;
-    color: #bbb;
-   
-    margin-top: 5px;
-}
-
-/* Subtle Hover Indicator */
-.hover-indicator {
-    font-style: italic;
-    font-size: 13px;
-    opacity: 0.7;
-    transition: opacity 0.3s ease-in-out;
-}
-.hover-indicator::after {
-    content: "Hover for details ⬇️";
-}
-.cardpro:hover .hover-indicator {
-    opacity: 0;
-}
-
-  /* Hover Effect - Show Details with Scroll */
-.hovercardpro {
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    max-height: 100%;
+    background: rgba(0, 0, 0, 0.9);
     position: absolute;
     bottom: 0;
     transform: translateY(100%);
@@ -164,15 +51,15 @@
     text-align: center;
     backdrop-filter: blur(10px);
     padding: 15px;
-    overflow: hidden;
+    overflow-y: auto; /* Allow scrolling inside */
 }
 
 /* Scrollable Content */
 .hover-content {
     width: 100%;
-    max-height: 100%;
+    max-height: 90%; /* Adjust max height */
     overflow-y: auto;
-    padding-right: 10px; /* Space for scrollbar */
+    padding-right: 10px;
     text-align: center;
 }
 
@@ -202,20 +89,84 @@
     margin-bottom: 10px;
 }
 
-.card-desc, .card-detail, .tech-stack {
-    font-size: 16px;
-    color: #d1d1d1;
-    margin-bottom: 8px;
+/* Description & Tech Stack */
+.card-desc {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
+.card-detail {
+    font-size: 17px;
+    color: #d1d1d1;
+}
 
+.tech-stack {
+    font-size: 14px;
+    color: #ff4757;
+    font-weight: bold;
+}
 
-  
+/* Hover Effect - Image Slightly Shrinks */
+.cardpro:hover .card-image {
+    transform: scale(0.95);
+}
+
+/* Buttons for Live & Code */
+.project-links {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+/* Button Styles */
+.btn-live, .btn-code {
+    padding: 8px 14px;
+    border: 2px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: black;
+    color: red;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-live:hover, .btn-code:hover {
+    background-color: red;
+    color: black;
+}
+
+/* Card Date & Type */
+.card-date, .card-type, .hover-indicator {
+    font-size: 14px;
+    color: #bbb;
+    margin-top: 5px;
+}
+
+/* Subtle Hover Indicator */
+.hover-indicator {
+    font-style: italic;
+    font-size: 13px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hover-indicator::after {
+    content: "Hover for details ⬇️";
+}
+
+.cardpro:hover .hover-indicator {
+    opacity: 0;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .cardpro {
         width: 280px;
-        height: 340px;
+        min-height: 340px; /* Adjust min height */
     }
 
     .card-title {
@@ -227,6 +178,7 @@
     .tech-stack {
         font-size: 15px;
     }
+
     .hover-indicator::after {
         content: "Tap for details ⬇️";
     }

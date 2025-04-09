@@ -6,7 +6,7 @@ import reactImg from '../assets/react.png';
 import htmlImg from '../assets/html-5.png';
 import cssImg from '../assets/css-3.png';
 import javaImg from '../assets/java.png';
-import cImg from '../assets/c (2).png';
+
 import cppImg from '../assets/cpp.png';
 import nodeImg from '../assets/node-js.png';
 import mongoImg from '../assets/mongo-db.png';
@@ -29,7 +29,7 @@ export const imagesFramework = [
   { title: "HTML", image: htmlImg },
   { title: "CSS", image: cssImg },
   { title: "Java", image: javaImg },
-  { title: "C", image: cImg },
+  
   { title: "C++", image: cppImg },
   { title: "JavaScript", image: jsImg },
   { title: "Node.js", image: nodeImg },
