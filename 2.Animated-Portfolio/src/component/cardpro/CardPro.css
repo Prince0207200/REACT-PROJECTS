@@ -1,6 +1,6 @@
 .cardpro {
     width: 90%;
-    max-width: 250px;
+    max-width: 350px;
     min-height: 400px; /* Ensure enough space */
     position: relative;
     overflow: hidden;
@@ -63,6 +63,7 @@
     text-align: center;
 }
 
+
 /* Scrollbar Styling */
 .hover-content::-webkit-scrollbar {
     width: 5px;
@@ -85,7 +86,9 @@
 /* Ensure text is readable */
 .hovercardpro h3 {
     font-size: 20px;
-    color: white;
+    background: linear-gradient(to right, rgb(255, 72, 0), white);
+    background-clip: text;
+    color: transparent;
     margin-bottom: 10px;
 }
 
@@ -93,10 +96,11 @@
 .card-desc {
     font-size: 18px;
     margin-bottom: 10px;
+    color: #eeeded;
 }
 
 .card-detail {
-    font-size: 17px;
+    font-size: 16px;
     color: #d1d1d1;
 }
 

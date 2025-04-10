@@ -6,6 +6,8 @@ import Cv from '../cv/Cv.jsx'
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { RiArrowDownDoubleLine } from "react-icons/ri";
 import { RiArrowUpDoubleLine } from "react-icons/ri";
+import { SiLeetcode } from "react-icons/si";
+import { SiCodeforces } from "react-icons/si";
 function Home() {
 
   const [isOpen, setIsOpen] = useState(false);
@@ -31,14 +33,15 @@ function Home() {
 
           {/* Social Icons (Visible Above CV Button in Mobile View) */}
           <div className="mobile-social">
-            <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="social-icon" />
-            </a>
-            <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer">
+            
+            <a href="https://github.com/Prince0207200" target="_blank" rel="noopener noreferrer">
               <FaGithub className="social-icon" />
             </a>
             <a href="mailto:prince.12215879@lpu.in">
               <FaEnvelope className="social-icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/prince-gupta-/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className="social-icon" />
             </a>
           </div>
 
@@ -52,15 +55,16 @@ function Home() {
         {/* Social Icons (Visible at Bottom in Laptop View) */}
         <div className="desktop-social">
           <div className="desktop-social-top">
-            <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="linkedin desk-top" />
+            <a href="https://leetcode.com/u/princegupta1455_/" target="_blank" rel="noopener noreferrer">
+              <SiLeetcode  className="linkedin desk-top" />
             </a>
-            <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Prince0207200" target="_blank" rel="noopener noreferrer">
               <FaGithub className="github desk-top" />
             </a>
-            <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="github desk-top" />
+            <a href="https://www.linkedin.com/in/prince-gupta-/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className="github desk-top" />
             </a>
+              
 
           </div>
           <div className="desktop-social-bottom">
@@ -72,8 +76,8 @@ function Home() {
                 <a href="mailto:prince.12215879@lpu.in">
                   <FaEnvelope className="email desk-top" />
                 </a>
-                <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="github" />
+                <a href="https://codeforces.com/profile/princegupta1455_" target="_blank" rel="noopener noreferrer">
+              <SiCodeforces className="github" />
             </a>
                 <div className="arrow-bottom" onClick={() => setIsOpen(!isOpen)}>
                   <RiArrowUpDoubleLine />

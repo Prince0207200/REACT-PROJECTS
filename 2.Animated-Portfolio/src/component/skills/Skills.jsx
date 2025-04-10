@@ -10,6 +10,12 @@ function Skills() {
         <header className="skills-header">
           <h2 className="skills-title">Technical Proficiency</h2>
         </header>
+        <h3 className="skills-subtitle">Skills:</h3>
+        <div className="skills-grid">
+          {imagesSkills.map(({ title, image }) => (
+            <SkillCard key={title} imageSrc={image} name={title} />
+          ))}
+        </div>
         
         <h3 className="skills-subtitle">Languages & Frameworks:</h3>
         <div className="skills-grid">
@@ -25,12 +31,7 @@ function Skills() {
           ))}
         </div>
 
-        <h3 className="skills-subtitle">Skills:</h3>
-        <div className="skills-grid">
-          {imagesSkills.map(({ title, image }) => (
-            <SkillCard key={title} imageSrc={image} name={title} />
-          ))}
-        </div>
+       
       </div>
     </section>
   );

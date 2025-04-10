@@ -1,6 +1,6 @@
 import React from 'react';
 import './Experience.css';
-import certificateimage from "../../assets/fw.png";
+import { internshipData, trainingData, certificationData } from '../db.js';
 
 function Experience() {
   return (
@@ -10,52 +10,53 @@ function Experience() {
       {/* Internship Section */}
       <div className='experience-section internship'>
         <h3 className='heading-all'>Internship</h3>
+        {internshipData.map((internship, index) => (
+          <div key={index} className='internship-content'>
+            <img src={internship.image} alt='Internship' className='internship-img' />
+            <div className="ab">
+            <p className="internship-title for-intern-coloumn">
+              <strong>{internship.title}</strong> at {internship.company}
+              <span className="internship-duration"> ({internship.duration})</span>
+            </p>
+            <p className="internship-description for-intern-coloumn">{internship.description}</p>
+            </div>
+          </div>
 
-        <div className='internship-content'>
-          <img src={certificateimage} alt='Internship' className='internship-img' />
-          <p>Completed a one-month remote software testing internship at Prodigy Infotech from February 15 to March 15.</p>
-
-        </div>
-
-        <div className='internship-content'>
-          <img src={certificateimage} alt='Internship' className='internship-img' />
-          <p>Completed a one-month remote software testing internship at Prodigy Infotech from February 15 to March 15.</p>
-
-        </div>
-
+        ))}
       </div>
 
       {/* Training Section */}
       <div className='experience-section training'>
         <h3 className='heading-all'>Training</h3>
+        {trainingData.map((training, index) => (
+          <div key={index} className='training-content'>
+            <div className='aa'>
+                <p className="training-title">
+                <strong>{training.title}</strong> <span className="training-duration">({training.duration})</span>
+              </p>
+              <p className="training-description">{training.description}</p>
+              </div>
+            <img src={training.image} alt='Training' className='training-img' />
+          </div>
 
-        <div className='training-content'>
-          <p>Completed a 2-month training program focused on software testing and automation.</p>
-          <img src={certificateimage} alt='Training' className='training-img' />
-        </div>
-
-        <div className='training-content'>
-          <p>Completed a 2-month training program focused on software testing and automation.</p>
-          <img src={certificateimage} alt='Training' className='training-img' />
-        </div>
-
+        ))}
       </div>
+
+
 
       {/* Certifications Section */}
       <div className='experience-section'>
-        <h3 className='heading-all'>Certifications</h3>
+  <h3 className='heading-all'>Certifications</h3>
+  <div className="certification-container">
+    {certificationData.map((cert, index) => (
+      <article key={index} className='certification-card'>
+        <img src={cert.image} alt='Certification' className='certification-icon' loading="lazy" />
+        <p className='certification-text'>{cert.title}</p>
+      </article>
+    ))}
+  </div>
+</div>
 
-        <div className='certification'>
-          <img src={certificateimage} alt='Certification' className='certificate-img' />
-          <p>Earned the IBM DevOps and Software Engineering Professional Certificate.</p>
-
-        </div>
-        <div className='certification'>
-          <img src={certificateimage} alt='Certification' className='certificate-img' />
-          <p>Completed the DevOps MOOC on Coursera.</p>
-        </div>
-
-      </div>
     </section>
   );
 }

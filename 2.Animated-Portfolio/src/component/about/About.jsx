@@ -18,7 +18,7 @@ function About() {
           </p>
           <p>
             I'm a passionate Full-Stack Developer & Software Tester 🚀.
-            I specialize in <b>React, Node.js, and DevOps</b>, with expertise in testing methodologies.
+            I specialize in <b>React, Node.js,</b> and <b>DevOps</b>, with expertise in <b>testing methodologies</b>.
           </p>
           <p>
             I love <b>building scalable applications</b>  and ensuring their <b>quality</b> with automation.

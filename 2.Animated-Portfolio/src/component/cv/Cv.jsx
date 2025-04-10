@@ -2,7 +2,7 @@ import React from "react";
 import './Cv.css'
 
 const Cv = () => {
-  const cvPath = "/mycv.pdf"; // Directly accessible from 'public' folder
+  const cvPath = "/myCv.pdf"; // Directly accessible from 'public' folder
 
   const handleOpen = () => {
     window.open(cvPath, "_blank"); // Opens in a new tab

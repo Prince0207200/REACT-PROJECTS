@@ -29,7 +29,7 @@ export const imagesFramework = [
   { title: "HTML", image: htmlImg },
   { title: "CSS", image: cssImg },
   { title: "Java", image: javaImg },
-  
+
   { title: "C++", image: cppImg },
   { title: "JavaScript", image: jsImg },
   { title: "Node.js", image: nodeImg },
@@ -92,78 +92,115 @@ export const devTips = [
 
 
 // Project Descriptions
-import gma from '../assets/va.png';
-import br from '../assets/br.png';
-import cb from '../assets/cb.png';
-import ise from '../assets/ise.png';
-import pmt from '../assets/cb.png';  
-import ai from '../assets/cb.png';   
+import gma from '../assets/gma.png';
+import snakeGameImage from '../assets/sgi.png';
+import calculatorImage from '../assets/ci.png';
+import clockImage from '../assets/clock.png';
+import pmt from '../assets/cb.png';
+import ai from '../assets/cb.png';
 
 export const desc = [
-  { 
+  {
+
     title: "Geet Music App",
     about: "An immersive and user-friendly music streaming application.",
-    description: "Geet Music App lets you explore, stream, and manage your favorite songs effortlessly. It features a sleek UI, real-time search, playlist creation, and seamless audio playback. Users can create personalized playlists, like and share tracks, and experience smooth cross-device synchronization.",
-    techStack: "React",
-    liveLink: "#", 
-    codeLink: "#",
+    description: "Geet Music App allows users to explore, stream, and manage their favorite songs effortlessly. It features a  real-time search, playlist creation and seamless audio playback. Users can create personalized playlist, like  and enjoy smooth cross-device synchronization.",
+    techStack: "React Js, Context API, CSS ",
+    liveLink: "https://geet-prince.netlify.app/",
+    codeLink: "https://github.com/Prince0207200/REACT-PROJECTS/tree/main/1.MusicApp",
     image: gma,
-    date: "12-13-14",
-    projectType: "asd"
+    date: "Achieved on: March 16, 2025",
+    projectType: "Entertainment App"
   },
-  { 
-    title: "Blog Aggregator", 
-    about: "Read & manage blogs effortlessly", 
-    description: "A blog aggregation and reading platform.", 
-    techStack: "Next.js, MongoDB, Tailwind",
-    liveLink: "#", 
-    codeLink: "#",
-    image: br,
-    date: "12-13-14",
-    projectType: "asd"
+  {
+
+
+    title: "Snake Game",
+    about: "A classic Snake game built with JavaScript, featuring smooth gameplay and score tracking.",
+    description: "The Snake game is a fun and addictive game where the player controls a snake on a bordered plane. The goal is to eat food to grow while avoiding collisions with walls or itself. It features simple controls, randomly generated food, score tracking, and a responsive design for a seamless experience.",
+    techStack: "HTML, CSS, JavaScript",
+    liveLink: "https://snake-game-prince02072004.netlify.app/",
+    codeLink: "https://github.com/Prince0207200/Snake_Game",
+    image: snakeGameImage,
+    date: "Achieved on: July 24, 2024",
+    projectType: "Game Development"
+
+
   },
-  { 
-    title: "Code Collaboration Platform", 
-    about: "Collaborate on coding projects", 
-    description: "A platform for developers to work together.", 
-    techStack: "MERN Stack, WebSockets",
-    liveLink: "#", 
-    codeLink: "#",
-    image: cb,
-    date: "12-13-14",
-    projectType: "asd"
+  {
+    title: "Calculator",
+    about: "A simple and user-friendly calculator for basic arithmetic operations.",
+    description: "This Calculator is a web-based application built with HTML, CSS, and JavaScript. It allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division. The interface is clean, responsive, and intuitive, making it easy to use across different devices.",
+    techStack: "HTML, CSS, JavaScript",
+    liveLink: "https://calculator-07-prince.netlify.app/",
+    codeLink: "https://github.com/Prince0207200/Calculator_07",
+    image: calculatorImage,
+    date: "Achieved on: July 24, 2024",
+    projectType: "Web Application"
   },
-  { 
-    title: "Instant Search Engine", 
-    about: "A fast search tool with real-time indexing.", 
-    description: "An advanced search engine with instant results.", 
-    techStack: "Elasticsearch, Node.js",
-    liveLink: "#", 
-    codeLink: "#",
-    image: ise,
-    date: "12-13-14",
-    projectType: "asd"
-  },
-  { 
-    title: "Project Management Tool", 
-    about: "Manage projects efficiently", 
-    description: "A task management app with real-time collaboration.", 
-    techStack: "Django, PostgreSQL, React",
-    liveLink: "#", 
-    codeLink: "#",
-    image: pmt,
-    date: "feb 25 to current",
-    projectType: "asd"
-  },
-  { 
-    title: "AI-Powered Assistant", 
-    about: "An intelligent chatbot", 
-    description: "A smart assistant powered by AI and NLP.", 
-    techStack: "Spring Boot, React, AWS",
-    liveLink: "#", 
-    codeLink: "#",
-    image: ai,
-    date: "End on: Jan 2024",
-    projectType: "asd"
+  {
+    title: "Analog Clock",
+    about: "A simple and elegant analog clock that displays the current time dynamically.",
+    description: "This Analog Clock is a web-based application built with HTML, CSS, and JavaScript. It features smooth hand movements, a responsive design, and real-time synchronization with the system clock. The interface is minimalistic and works seamlessly across different devices.",
+    techStack: "HTML, CSS, JavaScript",
+    liveLink: "https://analog-clock-prince02072004.netlify.app/",
+    codeLink: "https://github.com/Prince0207200/Analog_Clock",
+    image: clockImage,
+    date: "Achieved on: July 19, 2024",
+    projectType: "Web Application"
+}
+
+
+
+];
+
+import internshipCert from "../assets/Prodigy.png";
+import trainingCert from "../assets/cipher.jpg";
+import ibmCert from "../assets/ibm.png";
+import cloudcom from "../assets/cloudcomputing.png";
+import devopsCert from "../assets/udemydsa.png";
+import cipherProject from "../assets/projectCipherss.jpg";
+
+// Internship Data
+export const internshipData = [
+  {
+    image: internshipCert, // Ensure the correct image is linked
+    title: "Software Testing Internship",
+    company: "Prodigy Infotech",
+    duration: "February 15 - March 15, 2025",
+    description: "Successfully completed a 1-month internship in Software Testing at Prodigy Infotech with outstanding remarks. Gained hands-on experience in manual and automated testing.",
   }
+];
+
+// Training Data
+export const trainingData = [
+  {
+    image: trainingCert, // Ensure the correct image is linked
+    title: "Full Stack Development Training",
+    provider: "CipherSchools",
+    duration: "July 2024",
+    description: "Successfully completed training in Full Stack Development using the MERN stack at CipherSchools. Built two major projects as part of the training 'Calculator' and 'Blogging Website'",
+ 
+  }
+];
+
+// Certification Data
+export const certificationData = [
+  {
+    image: ibmCert,
+    title: "IBM DevOps and Software Engineering Certificate"
+  },
+  {
+    image: devopsCert,
+    title: "Udemy Mastring DSA Cerificate"
+  },
+  {
+    image: cloudcom,
+    title: "Cloud Computing"
+  },
+  {
+    image: cipherProject,
+    title: "CipherSchools Project Certificate"
+  }
+ 
 ];
