@@ -8,6 +8,7 @@ function Card({ title, image }) {
         <h3>{title}</h3>
       </div>
       <img src={image} alt={title} className="card-image" />
+      
     </div>
   );
 }

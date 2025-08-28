@@ -14,11 +14,14 @@ function Experience() {
           <div key={index} className='internship-content'>
             <img src={internship.image} alt='Internship' className='internship-img' />
             <div className="ab">
-            <p className="internship-title for-intern-coloumn">
-              <strong>{internship.title}</strong> at {internship.company}
-              <span className="internship-duration"> ({internship.duration})</span>
-            </p>
-            <p className="internship-description for-intern-coloumn">{internship.description}</p>
+              <p className="internship-title for-intern-coloumn">
+                <strong>{internship.title}</strong> at {internship.company}
+                <span className="internship-duration"> ({internship.duration})</span>
+              </p>
+              <p className="internship-description for-intern-coloumn">{internship.description}</p>
+              <a href="https://github.com/Prince0207200" target="_blank" rel="noopener noreferrer">
+                Certificate Link
+              </a>
             </div>
           </div>
 
@@ -31,11 +34,15 @@ function Experience() {
         {trainingData.map((training, index) => (
           <div key={index} className='training-content'>
             <div className='aa'>
-                <p className="training-title">
+              <p className="training-title">
                 <strong>{training.title}</strong> <span className="training-duration">({training.duration})</span>
               </p>
               <p className="training-description">{training.description}</p>
-              </div>
+              <a href="https://github.com/Prince0207200" target="_blank" rel="noopener noreferrer">
+                Certificate Link
+              </a>
+
+            </div>
             <img src={training.image} alt='Training' className='training-img' />
           </div>
 
@@ -46,16 +53,19 @@ function Experience() {
 
       {/* Certifications Section */}
       <div className='experience-section'>
-  <h3 className='heading-all'>Certifications</h3>
-  <div className="certification-container">
-    {certificationData.map((cert, index) => (
-      <article key={index} className='certification-card'>
-        <img src={cert.image} alt='Certification' className='certification-icon' loading="lazy" />
-        <p className='certification-text'>{cert.title}</p>
-      </article>
-    ))}
-  </div>
-</div>
+        <h3 className='heading-all'>Certifications</h3>
+        <div className="certification-container">
+          {certificationData.map((cert, index) => (
+            <article key={index} className='certification-card'>
+              <img src={cert.image} alt='Certification' className='certification-icon' loading="lazy" />
+              <p className='certification-text'>{cert.title}</p>
+              <a href="https://github.com/Prince0207200" target="_blank" rel="noopener noreferrer">
+                Certificate Link
+              </a>
+            </article>
+          ))}
+        </div>
+      </div>
 
     </section>
   );
