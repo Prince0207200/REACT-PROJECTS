@@ -21,7 +21,7 @@ const dispatch=useDispatch()
     };
 
     fetchUser();
-  }, []);
+  }, [dispatch]);
 
 
 }

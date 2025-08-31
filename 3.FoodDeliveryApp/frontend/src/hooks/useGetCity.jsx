@@ -27,7 +27,7 @@ function useGetCity() {
     place?.state_district;
       dispatch(setCity(city));
     });
-  }, [userData]);
+  }, [userData, apiKey, dispatch]);
 }
 export default useGetCity;
 
