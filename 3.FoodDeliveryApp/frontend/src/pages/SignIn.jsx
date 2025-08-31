@@ -7,6 +7,8 @@ import { serverUrl } from "../App.jsx";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { auth } from "../../firebase.js";
 import { ClipLoader } from "react-spinners";
+import { useDispatch } from "react-redux";
+import { setUserData } from "../redux/userSlice.js";
 
 function SignIn() {
   const primaryColor = "#ff4d2d";
@@ -19,6 +21,7 @@ function SignIn() {
   const [password, setPassword] = useState("");
   const [err, setErr] = useState("");
   const [loading, setLoading] = useState(false);
+  const dispatch=useDispatch()
 
   const handleSignIn = async () => {
     if (!email || !password) {
@@ -31,7 +34,7 @@ function SignIn() {
       const result = await axios.post(`${serverUrl}/api/auth/signin`, payload, {
         withCredentials: true,
       });
-      console.log(result);
+      dispatch(setUserData(result.data))
       setErr("");
       setLoading(false);
     } catch (error) {
@@ -53,7 +56,7 @@ function SignIn() {
         { withCredentials: true }
       );
 
-      console.log(data);
+      dispatch(setUserData(data))
       setErr("");
     } catch (error) {
       console.log(error);
@@ -74,7 +77,7 @@ function SignIn() {
           className="text-3xl font-bold mb-2"
           style={{ color: `${primaryColor}` }}
         >
-          Food Delivery Appp
+          Vyanj
         </h1>
         <p>Login your account to get started with delicious deliveries</p>
 
