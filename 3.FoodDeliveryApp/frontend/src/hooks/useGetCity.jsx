@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import axios from "axios";
 
 import { useDispatch, useSelector } from "react-redux";
-import { setCity } from "../redux/userSlice";
+import { setCurrentAddress, setCurrentCity, setCurrentState } from "../redux/userSlice";
 
 
 function useGetCity() {
@@ -25,7 +25,11 @@ function useGetCity() {
     place?.village ||
     place?.county ||
     place?.state_district;
-      dispatch(setCity(city));
+      dispatch(setCurrentCity(city));
+      dispatch(setCurrentState(result?.data?.results[0]?.state))
+      dispatch(setCurrentAddress(result?.data?.results[0]?.address_line2 || result?.data?.results[0]?.address_line1))
+     
+
     });
   }, [userData, apiKey, dispatch]);
 }
